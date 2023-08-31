@@ -509,12 +509,24 @@ textarea:focus,
   height: 100%;
 }
 .header .logo {
-  display: block;
+  display: inline-flex;
   float: left;
+  width: 445px;
+}
+.header .logo2 {
+  display: block;
+  float: right;
   width: 245px;
 }
 .header .logo img {
   max-width: inherit;
+  padding-right: 15px;
+}
+@media only screen and (max-width: 767px) {
+  .header .logo img {
+    width: 120px !important;
+    padding-top: 8px;
+  }
 }
 .header .search {
   float: right;
